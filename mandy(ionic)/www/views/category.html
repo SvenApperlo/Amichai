@@ -1,0 +1,25 @@
+<ion-view title="Menu">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="category-cart button button-icon icon ion-ios-briefcase-outline" ng-show="isCart" ng-click="goCart()">1</button>
+    </ion-nav-buttons>
+    <div class="bar bar-subheader" no-tap-scroll="true">
+        <p class="subheader-name" style="float:left;">5033 Sherbrook O</p>
+        <p class="subheader-name" style="float:right;">{{storeType}}</p> 
+    </div>
+    <ion-content class="has-header has-subheader">
+        <ul class="list">
+          <li class="item category-item" style="display: block;" ng-repeat="x in names" ng-click="goPrice({{names.index}})">
+            <p class=" category-name" style="float: left;">{{x.name}}</p>
+            <div class="detail5" style="float: right;">
+              <i class="icon ion-chevron-right" style="margin-left: 12px;"></i>
+            </div>
+          </li>
+        </ul>
+        <div class="menu-bottom-text">
+          <h5 style="color: #999;">Orders are ready approximately 30 minutes from order time</h5>
+        </div>
+    </ion-content>
+</ion-view>

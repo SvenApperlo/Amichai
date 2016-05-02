@@ -1,0 +1,14 @@
+<ion-view title="Past Orders">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-content class="has-header">
+      <ul class="list">
+          <li class="item item-stable item-icon-right" style="" ng-repeat="x in items" ng-click="goDetail(x.index)">
+            <p class="" style="font-size:16px; margin:4px 0; color:black">{{x.name}}</p>
+            <p class="" style="">{{x.datetime}}</p>
+            <i class="icon ion-ios-arrow-right" style="margin-left: 12px;"></i>
+          </li>
+        </ul>
+    </ion-content>
+</ion-view>

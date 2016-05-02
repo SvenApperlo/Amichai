@@ -1,0 +1,24 @@
+.extra-item-icon,
+.extra-item-icon-sub {
+	float: right;
+	font-size: 20px;
+}
+.extra-item-icon-sub {
+	color: #FA486C;
+}
+.list .item.item-accordion {
+	line-height: 60px;
+	padding-top: 0;
+	padding-bottom: 0;
+	transition: 0.09s all linear;
+	color: #686868;
+	font-family: 'open-sans-light';
+}
+
+.list .item.item-accordion.ng-hide {
+	line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+	display: block !important;
+}

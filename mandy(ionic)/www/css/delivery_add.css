@@ -1,0 +1,27 @@
+.deliver-add-postal {
+	padding: 20px 12px 0;
+	color: #686868;
+	font-family: 'open-sans-light';
+}
+.deliver-add-select {
+	width: 100%;
+	padding-left: 0px !important;
+}
+.deliver-add-select-div {
+	width: 48%;
+	float: left;
+}
+.deliver-add-select-text {
+	width: 48%;
+	float: right;
+	border-bottom: 1px solid rgb(104, 104, 104) !important;
+}
+
+.deliver-add-spec-label {
+	margin-top:68px;margin-left: 5%;
+	color: #686868;
+	font-family: 'open-sans-light';
+}
+.deliver-add-spec-text {
+	border-bottom: 1px solid rgb(104, 104, 104) !important;display: block;margin: 0px 5%;width: 90%;
+}

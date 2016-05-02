@@ -1,0 +1,54 @@
+<ion-view title='Order Confirmed!'>
+    <ion-nav-bar class="confirm-bar">
+      <ion-nav-buttons side="left">
+        <button class="button button-icon icon ion-ios-arrow-thin-left" ng-click="goBack()"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content class="has-header">
+      <ion-list>
+        <ion-item class="item-stable" style="background-color:#FA486C;font-size: 100px;color:white; border-style:hidden">
+          <div style="width: 250px; height: 102px; margin: auto;">
+            <i class="icon ion-ios-checkmark" style="float:left"></i>
+            <div style="float:right; text-align:center;">
+              <h1  class="" style="font-family:'open-sans-light'; font-size:64px; color:white !important; margin-bottom:0px !important;">{{hr}}</h1>
+              <p  class="" style="font-family:'open-sans-light'; font-size:10px; color:white !important;">APPROXIMATE TAKEOUT TIME</p>
+            </div>
+          </div>
+        </ion-item>
+        <ion-item class="item-stable" style="background-color:rgb(215, 66, 95);color:white;font-family:'open-sans-light'; padding-left:40px; padding-right:40px;border-style:hidden">
+            <i class="icon ion-ios-navigate-outline" style="float:right; font-size: 40px;"></i>
+            <span  class="" style="display:block;">5033 Rue Sherbrook O,</span>
+            <span  class="">Westmount, QC H4A 1S8</span>
+        </ion-item>
+        <ion-item class="item-stable" style="background-color:rgb(215, 66, 95);color:white;font-family:'open-sans-light'; padding-left:40px; padding-right:40px; font-size:10px;border-style:hidden">
+            <span  class="" style="display:block;">Please arrive in person at Mandy's</span>
+            <span  class="">5 minutes before your takeout time.</span>
+        </ion-item>
+      </ion-list>
+      <div style="width:100%; height:40px; background-color:#ECECEC; padding: 10px 5%; font-family:'open-sans-light'">ORDER</div>
+      <ion-list>
+        <ion-item class="cart-item item-stable" ng-repeat="x in items">
+            <i class="cart-item-price">{{'$'+x.price}}</i>
+            <span  class="cart-item-name">{{x.name}}</span>
+            <span class="cart-item-sub" ng-repeat="xx in x.subitem">{{'+' + xx.name}}</span>
+        </ion-item>
+      </ion-list>
+      <div style="width:100%; height:40px; background-color:#ECECEC; padding: 10px 5%; font-family:'open-sans-light'">SUMMARY</div>
+      <div style="border-bottom: 1px solid #686868; padding: 30px 0 8px; margin:0 20px; font-family:'open-sans-light';">
+        <div style="display:block; margin: 2px 0px;">
+          <span style="font-size:12px; color: #686868;">SUBTOTAL</span>
+          <span style="float:right">{{'$'+ subtotal}}</span>
+        </div>
+        <div style="display:block; margin: 2px 0px;">
+          <span style="font-size:12px; color: #686868;">{{'TAX(' + taxpro + '%)'}}</span>
+          <span style="float:right">{{'$'+tax}}</span>
+        </div>
+      </div>
+      <div style="margin:8px 20px; font-family:'open-sans-light';">
+        <div style="display:block; margin: 2px 0px;">
+          <span style="font-size:12px;">TOTAL</span>
+          <span style="float:right">{{'$'+total}}</span>
+        </div>
+      </div>
+    </ion-content>
+</ion-view>

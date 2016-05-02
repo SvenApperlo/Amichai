@@ -1,0 +1,24 @@
+<ion-view title='Extras'>
+    <ion-nav-bar class="">
+      <ion-nav-buttons side="left">
+        <button class="button button-icon icon ion-ios-arrow-thin-left" ng-click="goBack()"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content class="has-header">
+        <ion-list>
+          <div ng-repeat="x in items">
+            <ion-item style="font-family:'open-sans-light';" class="item-stable" ng-click="toggleGroup(x)" ng-class="{active: isGroupShown(x)}">
+              <i class="icon extra-item-icon" ng-class="isGroupShown(x) ? 'ion-ios-arrow-up' : 'ion-ios-arrow-down'"></i>
+              &nbsp;
+              {{x.name}}
+            </ion-item>
+            <ion-item class="item-accordion" ng-repeat="xx in x.subitem" ng-show="isGroupShown(x)">
+              <i class="icon extra-item-icon-sub" ng-class="xx.checked ? 'ion-ios-checkmark' : 'ion-ios-circle-outline'"></i>
+              &nbsp;&nbsp;
+              {{xx.name}}
+            </ion-item>
+          </div>
+        </ion-list>
+    </ion-content>
+    <button class="login-bottom-button button button-full" ng-click="done()">DONE</button>
+</ion-view>

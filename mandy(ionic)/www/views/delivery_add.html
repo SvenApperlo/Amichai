@@ -1,0 +1,34 @@
+<ion-view title='Delivery Address'>
+    <ion-nav-bar class="">
+      <ion-nav-buttons side="left">
+        <button class="button button-icon icon ion-ios-arrow-thin-left" ng-click="goBack()"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content class="has-header" scroll="false">
+      <div class="list" style="margin: 5% 5%;">
+          <label class="login-item item item-input">
+              <span calss="input-label">Address line 1</span>
+              <input type="text" style="padding-left: 10px;">
+          </label>
+          <label class="login-item item item-input">
+              <span calss="input-label">Address line 2 (Optional)</span>
+              <input type="text" style="padding-left: 10px;">
+          </label>
+          <div class="deliver-add-postal list">
+            <span style="display:block;">Postal code</span>
+            <div class="deliver-add-select-div item item-select">
+              <select class="deliver-add-select" ng-model="code" ng-change="checkCode()">
+                <option>H3K</option>
+                <option>H4C</option>
+              </select>
+            </div>
+            <input class="deliver-add-select-text" type="text" style="padding-left: 10px;"></input>
+          </div>
+        </div>
+        <div>
+          <p class="deliver-add-spec-label">Special delivery instructions(Optional)</p>
+          <input class="deliver-add-spec-text" type="text" style=""></input>
+        </div>
+    </ion-content>
+    <button class="login-bottom-button button button-full button-icon icon ion-ios-arrow-thin-right" ng-click="goCredit()"></button>
+</ion-view>

@@ -1,0 +1,13 @@
+.category-item {
+	height:80px;
+	padding: 30px 16px;
+}
+.category-name {
+	color: #000000 !important;
+}
+
+.category-cart {
+	background-color: #FA486C !important;
+	border-radius: 40px;
+	color: white;
+}

@@ -1,0 +1,78 @@
+.load-title {
+	width: 100%;
+	text-align: center;
+	margin: 26% 0 10%;
+	animation-name: logo-slideUp;
+	-webkit-animation-name: logo-slideUp;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+}
+.load-logo {
+	margin: auto;
+	width: 140px;
+	height: 140px;
+	background-size: 100% 100%;
+	background-image: url("../img/icon.png");
+}
+.load-text {
+	text-align: center;
+	padding: 0 20%;
+}
+.store-list {
+	margin: 40px 20px 0;
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;
+	animation-duration: 3s;
+	-webkit-animation-duration: 3s;
+}
+.store-item {
+	padding: 8px;
+	border-style: none;
+}
+.load-store-button {
+	border-radius: 50px;
+	width: 74%;
+	margin: 0 13%;
+	color: white;
+}
+
+/*logo slide*/
+@-webkit-keyframes logo-slideUp {
+  from {
+    margin-top: 50%;
+  }
+
+  to {
+    margin-top: 26%;
+  }
+}
+
+@keyframes logo-slideUp {
+  from {
+    margin-top: 50%;
+  }
+
+  to {
+    margin-top: 26%;
+  }
+}
+/*fadein*/
+@-webkit-keyframes fadeIn {
+  from, 20%{
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from, 20%{
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

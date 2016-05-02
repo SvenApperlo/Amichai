@@ -1,0 +1,90 @@
+/* Empty. Add your own CSS if you like */
+@font-face {
+  font-family: 'open-sans-light';
+  src: url('../fonts/OpenSans-Light.ttf');
+}
+@font-face {
+  font-family: 'open-sans-regular';
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'open-sans-semibold';
+  src: url('../fonts/OpenSans-Semibold.ttf');
+}
+@font-face {
+  font-family: 'open-sans-bold';
+  src: url('../fonts/OpenSans-Bold.ttf');
+}
+@font-face {
+  font-family: 'go-tham-book';
+  src: url('../fonts/Gotham-Book.ttf');
+}
+body {
+	cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+* {
+	font-family: 'open-sans-regular';
+  transition: all linear 0.2s;
+}
+
+body {
+  font-family: 'open-sans-regular';  
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'open-sans-light';  
+}
+
+input, button, select, textarea {
+  font-family: 'open-sans-light' !important;
+  font-size: 14px  !important;
+}
+
+.item-input,
+.subheader-name {
+  padding: 12px;
+  font-size: 14px;
+  bottom: 0px;
+  color: #686868;
+  font-family: 'open-sans-light';
+}
+.enable {
+  background-color: #FA486C !important;
+  color: white !important;
+}
+
+.disable {
+  background-color: #ECECEC !important;
+  color: #000000 !important;
+}
+.bar,.bar .button {
+  font-family: 'open-sans-light' !important;
+  border-style: none;
+  background-color: #ECECEC;
+}
+.item-content, .item p {
+  font-family: 'open-sans-light';
+}
+.popup-buttons {
+  padding: 0;
+}
+
+.popup-buttons .button {
+  background-color: #FA486C;
+  color: white;
+  border-radius: 0px;
+}
+.button-icon.icon::before {
+    font-size: 28px;
+}
+.popup-body {
+  text-align: center;
+  color: #686868;
+  font-family: 'open-sans-light';
+}
+
+.form-error-text {
+  color: #fd526c;
+  font-family: 'open-sans-light';
+  font-size: 12px;
+}

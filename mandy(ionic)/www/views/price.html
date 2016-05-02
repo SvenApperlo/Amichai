@@ -1,0 +1,18 @@
+<ion-view title={{categoryName}}>
+    <ion-nav-bar class="">
+      <ion-nav-buttons side="left">
+        <button class="button button-icon icon ion-ios-arrow-thin-left" ng-click="goBack()"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content class="has-header" scroll="false">
+        <ul class="list">
+          <li class="item price-item" style="display: block;" ng-repeat="x in names" ng-click="goPriceDetail({{names.index}})">
+            <p class="price-name" style="float: left;">{{x.name}}</p>
+            <div class="price-item-right" style="float: right;">
+              <i class="price-item-icon icon ion-chevron-right" style="margin-left: 12px;"></i>
+              <p class="price-item-price">{{x.price}}</p>
+            </div>
+          </li>
+        </ul>
+    </ion-content>
+</ion-view>

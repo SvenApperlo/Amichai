@@ -1,0 +1,24 @@
+.postal-text {
+	margin-top: 50%;
+	text-align: center;
+	padding: 0 16%;
+}
+.postal-bottom-text {
+	position: absolute;
+	bottom: 60px;
+}
+.postal-select {
+	width: 100%;
+	text-align: center;
+}
+.postal-select-item {
+	width: 90%;
+	margin: 20px 5%;
+}
+.postal-bottom-button {
+	background-color: #FA486C;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	margin:0 !important;
+}

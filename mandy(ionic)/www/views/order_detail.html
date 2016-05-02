@@ -1,0 +1,36 @@
+<ion-view title='{{order_name}}'>
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-content class="has-header">
+      <button style="margin-top:10px; margin-bottom:10px;"class="button load-store-button enable" ng-click="favourite()">
+        <i class="icon ion-heart" style="margin-right:10px;" ng-show="favouriteFlag"></i>{{favourite_title}}
+      </button>
+      <button style="margin-bottom:10px;"class="button load-store-button enable" ng-click="reorder()">RE-ORDER</button>
+      <div style="width:100%; height:40px; background-color:#ECECEC; padding: 10px 5%; font-family:'open-sans-light'">ORDER</div>
+      <ion-list>
+        <ion-item class="cart-item item-stable" ng-repeat="x in items">
+            <i class="cart-item-price">{{'$'+x.price}}</i>
+            <span  class="cart-item-name">{{x.name}}</span>
+            <span class="cart-item-sub" ng-repeat="xx in x.subitem">{{'+' + xx.name}}</span>
+        </ion-item>
+      </ion-list>
+      <div style="width:100%; height:40px; background-color:#ECECEC; padding: 10px 5%; font-family:'open-sans-light'">SUMMARY</div>
+      <div style="border-bottom: 1px solid #686868; padding: 30px 0 8px; margin:0 20px; font-family:'open-sans-light';">
+        <div style="display:block; margin: 2px 0px;">
+          <span style="font-size:12px; color: #686868;">SUBTOTAL</span>
+          <span style="float:right">{{'$'+ subtotal}}</span>
+        </div>
+        <div style="display:block; margin: 2px 0px;">
+          <span style="font-size:12px; color: #686868;">{{'TAX(' + taxpro + '%)'}}</span>
+          <span style="float:right">{{'$'+tax}}</span>
+        </div>
+      </div>
+      <div style="margin:8px 20px; font-family:'open-sans-light';">
+        <div style="display:block; margin: 2px 0px;">
+          <span style="font-size:12px;">TOTAL</span>
+          <span style="float:right">{{'$'+total}}</span>
+        </div>
+      </div>
+    </ion-content>
+</ion-view>

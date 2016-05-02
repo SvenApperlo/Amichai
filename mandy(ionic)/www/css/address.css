@@ -1,0 +1,16 @@
+.address-item-right {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 30px;
+	right: 20px;
+	border: 1px solid rgb(104, 104, 104);
+	border-radius: 50%;
+}
+.address-item-check {
+	color: #FA486C;
+	font-size: 31px;
+	position: absolute;
+	top: -5px;
+	left: -1px;
+}

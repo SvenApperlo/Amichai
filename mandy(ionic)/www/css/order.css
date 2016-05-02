@@ -1,0 +1,36 @@
+.load-title {
+	width: 100%;
+	text-align: center;
+	margin: 26% 0 10%;
+	animation-name: logo-slideUp;
+	-webkit-animation-name: logo-slideUp;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+}
+.order-text {
+	margin-top: 50%;
+	text-align: center;
+	padding: 0 20%;
+}
+.order-list {
+	margin: 40px 20px 0;
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;
+	animation-duration: 1s;
+	-webkit-animation-duration: 2s;
+}
+.order-item {
+	padding: 8px;
+	border-style: none;
+}
+.order-pickup-button,
+.order-delivery-button {
+	border-radius: 50px;
+	width: 74%;
+	margin: 0 13%;
+}
+.order-bottom-text {
+	position: absolute;
+	bottom: 16px;
+}
+

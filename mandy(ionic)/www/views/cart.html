@@ -1,0 +1,24 @@
+<ion-view title="Cart">
+    <ion-nav-bar class="">
+      <ion-nav-buttons side="left">
+        <button class="button button-icon icon ion-ios-arrow-thin-left" ng-click="goBack()"></button>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+        <button class="button" ng-click="doEdit()">{{edit_title}}</button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content class="has-header">
+        <ion-list show-delete="editFlag">
+          <ion-item class="cart-item item-stable" ng-repeat="x in items">
+            <ion-delete-button class="ion-minus-circled"></ion-delete-button>
+              <i class="cart-item-price">{{'$'+x.price}}</i>
+              <span  class="cart-item-name">{{x.name}}</span>
+              <span class="cart-item-sub" ng-repeat="xx in x.subitem">{{'+' + xx.name}}</span>
+          </ion-item>
+          <ion-item class="cart-item cart-item-last item-stable" ng-show="!editFlag">
+            <i class="cart-item-totalprice">{{'$'+totalprice}}</i>
+          </ion-item>
+        </ion-list>
+    </ion-content>
+    <button class="login-bottom-button button button-full" ng-click="check()">CHECK OUT</button>
+</ion-view>

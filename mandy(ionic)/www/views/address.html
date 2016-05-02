@@ -1,0 +1,24 @@
+<ion-view title="Address">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button" ng-click="doEdit()">{{edit_title}}</button>
+    </ion-nav-buttons>
+    <ion-content class="has-header">
+      <ion-list show-delete="editFlag">
+        <ion-item ng-repeat="x in addressData">
+          <ion-delete-button class="ion-minus-circled"></ion-delete-button>
+            {{x.line1}}
+            <p style="margin: 7px 0px 0px;">{{x.line2}}</p>
+            <p>{{x.postal}}</p>
+            <p>{{x.special}}</p>
+            <div class="address-item-right" ng-click="doCheckItem({{x.index}})">
+              <p style="position: absolute;right: 36px; font-size:12px;" ng-show="{{x.identified}}">DEFAULT</p>
+              <a class="address-item-check icon ion-ios-checkmark" ng-show="{{x.identified}}"></a>
+            </div>
+          </ion-delete-button>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+</ion-view>

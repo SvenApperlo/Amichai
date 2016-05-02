@@ -1,0 +1,27 @@
+<ion-view title="">
+  <ion-nav-bar class="">
+    <ion-nav-buttons side="left">
+      <button class="button button-icon icon ion-ios-arrow-thin-left" ng-click="goBack()"></button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
+  <div class="bar bar-subheader" no-tap-scroll="true">
+     <p class="subheader-name">5033 Sherbrook O</p> 
+  </div>
+  <ion-content class="has-header has-subheader" scroll="false">
+    <div class="order-text">
+      <h5 style="color: #999;">What type of order</h5>
+    </div>
+    <ul class="order-list list">
+    	<li class="item order-item">
+    		<button class="button order-pickup-button enable" ng-click="goPostal('Pick up')">PICK UP</button>
+    	</li>
+      <li class="item order-item">
+        <button class="button order-delivery-button disable" ng-click="goPostal('Delivery')"><h3>DELIVERY</h3><p style="line-height:14px;font-size:12px;">COMING SOON</p></button>
+      </li>
+    </ul>
+    <div class="order-text order-bottom-text">
+      <h5 style="color: #999;">All orders have a minimum 30 minute wait</h5>
+    </div>
+  </ion-content>
+</ion-view>

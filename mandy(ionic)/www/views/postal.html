@@ -1,0 +1,32 @@
+<ion-view title="">
+  <ion-nav-bar class="">
+    <ion-nav-buttons side="left">
+      <button class="button button-icon icon ion-ios-arrow-thin-left" ng-click="goBack()"></button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <div class="bar bar-subheader" no-tap-scroll="true">
+     <p class="subheader-name" style="float:left;">5033 Sherbrook O</p>
+     <p class="subheader-name" style="float:right;">{{storeType}}</p> 
+  </div>
+    <ion-content class="has-header has-subheader" scroll="false">
+      <div class="postal-text">
+        <h5 style="color: #999;">What is your Postal Code?</h5>
+      </div>
+      <div class="postal-select">
+        <label class="postal-select-item item item-input item-select">
+          <div class="input-label">
+            <h3 style="color: #999;">Postal Code</h3>
+          </div>
+          <select class="" ng-model="code" ng-change="checkCode()">
+            <option>H3K</option>
+            <option>H3L</option>
+            <option>H3M</option>
+          </select>
+        </label>
+      </div>
+      <div class="postal-text postal-bottom-text">
+        <h5 style="color: #999;">If you don't see your Postal Code, please try another Mandy's location</h5>
+      </div>
+      <button class="postal-bottom-button button button-full button-icon icon ion-ios-arrow-thin-right" ng-click=""></button>
+    </ion-content>
+</ion-view>

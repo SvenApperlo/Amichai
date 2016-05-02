@@ -1,0 +1,20 @@
+<ion-view title='Checkout'>
+    <ion-nav-bar class="">
+      <ion-nav-buttons side="left">
+        <button class="button button-icon icon ion-ios-arrow-thin-left" ng-click="goBack()"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content class="has-header" scroll="false">
+        <div class="load-text" style="margin-top:26%;">
+          <h5 style="color: #999;">Do you already have an account?</h5>
+        </div>
+        <ul class="store-list list">
+          <li class="item store-item">
+            <button class="button load-store-button enable" ng-click="goLogin()">LOGIN</button>
+          </li>
+          <li class="item store-item">
+            <button class="button load-store-button enable" ng-click="goGuest()">CHECKOUT AS GUEST</button>
+          </li>
+        </ul>
+    </ion-content>
+</ion-view>

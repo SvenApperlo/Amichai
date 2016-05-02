@@ -1,0 +1,24 @@
+<ion-view title="Change Password">
+    <ion-nav-bar class="">
+      <ion-nav-buttons side="left">
+        <button class="button button-icon icon ion-ios-arrow-thin-left" ng-click="goBack()"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content class="has-header" scroll="false">
+      <div class="list" style="margin: 10% 5%;">
+        <label class="login-item item item-input">
+            <span calss="input-label">Current password</span>
+            <input type="password" style="padding-left: 10px;">
+        </label>
+        <label class="login-item item item-input">
+            <span calss="input-label">New password</span>
+            <input type="password" style="padding-left: 10px;">
+        </label>
+        <label class="login-item item item-input">
+            <span calss="input-label">Confirm new password</span>
+            <input type="password" style="padding-left: 10px;">
+        </label>
+      </div>
+      <button class="login-bottom-button button button-full" ng-click="doSave()">SAVE</button>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,26 @@
+<ion-view title="account">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-content class="has-header" scroll="false">
+      <div class="list" style="margin: 10% 5%;">
+        <label class="account-item item item-input">
+            <span calss="input-label">Full name</span>
+            <input type="text" style="padding-left: 10px;">
+        </label>
+        <label class="account-item item item-input">
+            <span calss="input-label">Phone number</span>
+            <input type="text" style="padding-left: 10px;">
+        </label>
+        <label class="account-item item item-input">
+            <span calss="input-label">Email address</span>
+            <input type="text" style="padding-left: 10px;">
+        </label>
+        <label class="account-item item item-input item-icon-right" ng-click="goChangePassword()">
+          <span class="input-label">Password</span>
+          <i class="icon ion-ios-arrow-right"></i>
+        </label>
+      </div>
+      <button class="account-bottom-button button button-full" ng-click="doSave()">SAVE</button>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,38 @@
+<ion-side-menus>
+
+    <ion-pane ion-side-menu-content drag-content="false">
+        <ion-nav-bar class="nav-title-slide-ios7">
+            
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+    </ion-pane>
+
+    <ion-side-menu side="left" class="menu">
+        <ion-content class="mymenu">
+            <div class="menu-top">
+                <div class="menu-top-image"></div>
+                <p class="menu-top-store">5033 Sherbrook O</p>
+            </div>
+            <ion-list>
+                <ion-item nav-clear menu-close class="menu-item" ng-click="goMenu()">
+                    MENU
+                </ion-item>
+                <ion-item nav-clear menu-close class="menu-item" ng-click="goLogin()">
+                    LOGIN
+                </ion-item>
+                <ion-item nav-clear menu-close class="menu-item" ng-click="goAccount()">
+                    ACCOUNT
+                </ion-item>
+                <ion-item nav-clear menu-close class="menu-item" ng-click="goAddress()">
+                    ADDRESSES
+                </ion-item>
+                <ion-item nav-clear menu-close class="menu-item" ng-click="goOrder()">
+                    ORDERS
+                </ion-item>
+                <ion-item nav-clear menu-close class="menu-item" ng-click="goFavourite()">
+                    FAVOURITES
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

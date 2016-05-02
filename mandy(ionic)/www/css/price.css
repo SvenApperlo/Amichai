@@ -1,0 +1,16 @@
+.price-item {
+	height:80px;
+	padding: 30px 16px;
+}
+.price-name {
+	color: #000000 !important;
+}
+.price-item-right {
+	display: block;
+}
+.price-item-price {
+	float: right;
+}
+.price-item-icon {
+	float: right;
+}

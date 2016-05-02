@@ -1,0 +1,20 @@
+<ion-view title='Delivery Address'>
+    <ion-nav-bar class="">
+      <ion-nav-buttons side="left">
+        <button class="button button-icon icon ion-ios-arrow-thin-left" ng-click="goBack()"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content class="has-header" scroll="false">
+      <button style="margin-top:10px; margin-bottom:10px;"class="button load-store-button enable" ng-click="goDelivery_add()">Add an Address</button>
+      <ion-list>
+            <ion-item class="item-stable" ng-repeat="x in items">
+              <span style="font-family:'open-sans-light'">{{x.name}}
+                <i class="icon extra-item-icon-sub" ng-class="x.checked ? 'ion-ios-checkmark' : 'ion-ios-circle-outline'"></i>
+              </span>
+              &nbsp;
+              <p style="margin-top: 8px; font-size:12px;">{{x.postal}}</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+    <button class="login-bottom-button button button-full button-icon icon ion-ios-arrow-thin-right" ng-click="goDelivery_address()"></button>
+</ion-view>

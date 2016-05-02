@@ -1,0 +1,23 @@
+<ion-view title="Login">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-content class="has-header" scroll="false">
+    <form name="userForm" novalidate>
+      <div class="list" style="margin: 10% 5%;">
+        <label class="item item-input" ng-class="{'login-item-invalid': !userForm.useremail.$pristine && userForm.useremail.$invalid, 'login-item':userForm.useremail.$pristine || userForm.useremail.$valid}">
+            <span calss="input-label">Email</span>
+            <input type="email" style="padding-left: 10px;" name="useremail" ng-model="useremail" required>
+        </label>
+        <label class="item item-input" ng-class="{'login-item-invalid': !userForm.password.$pristine && userForm.password.$invalid, 'login-item':userForm.password.$pristine || userForm.password.$valid}">
+            <span calss="input-label">Password</span>
+            <input type="password" style="padding-left: 10px;" name="password" ng-model="password" required>
+        </label>
+      </div>
+    </form>
+      <div style="display:block;">
+        <a href="#/app/forgot" class="login-forgot">FORGOT PASSWORD?</a>
+      </div>
+      <button class="login-bottom-button button button-full button-icon icon ion-ios-arrow-thin-right" ng-click="goDelivery()"></button>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,24 @@
+.login-item {
+	margin-top: 10px;
+	border-style: hidden;
+	border-bottom: 1px solid #686868;
+}
+.login-item-invalid {
+	margin-top: 10px;
+	border-style: hidden;
+	border-bottom: 2px solid #FA486C;
+}
+
+.login-forgot {
+	font-size: 12px;
+	float: right;
+	margin-right: 8%;
+	color: #686868;
+}
+.login-bottom-button {
+	background-color: #FA486C;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	margin:0 !important;
+}
